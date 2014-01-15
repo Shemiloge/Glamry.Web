@@ -1,0 +1,90 @@
+@media (min-width: 980px) {
+    body {
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    background-image: url("/Content/images/glyphicons-halflings.png");
+}
+
+.navbar-inverse .navbar-toggle {
+    color: white;
+    font-weight: bold;
+    border-color: white;
+}
+
+    .navbar-inverse .navbar-toggle .glyphicon {
+        color: white;
+    }
+
+    .navbar-inverse .navbar-toggle:hover {
+        background-color: #ddd;
+        color: #333;
+    }
+
+        .navbar-inverse .navbar-toggle:hover .glyphicon {
+            color: white;
+        }
+
+.modal-dialog {
+    width: 450px;
+    padding: 10px;
+    background-image: url("/Content/images/diagonal-noise.png");
+}
+
+.modal-body {
+    background-image: url("/Content/images/diagonal-noise.png");
+}
+
+
+
+#register {
+    width: 500px;
+}
+
+/*.carousel-caption {
+    height: 400px;
+    width: 1000px;
+}*/
+
+    .carousel-caption p {
+        font-size: 24px;
+        color: black;
+        font-weight: bolder;
+        line-height: 1.5px;
+    }
+
+/*h1, h2, h3 {
+    font-family: "Segoe UI Web Regular","Segoe UI","Segoe UI Symbol","HelveticaNeue-Light","Helvetica Neue",Arial,sans-serif;
+    font-size: 150%;
+}*/
+
+
+.carousel {
+    background-image: url("/Content/images/");
+}
+.carousel-caption {
+  -ms-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.carousel .item {
+    height: 425px;
+    width: auto;
+}
+
+.bolder{
+     font-weight: bolder;
+}
+
+body {
+    font-family: "Segoe UI","Helvetica Neue","Arial";
+    background: url("/Content/images/diagonal-noise.png");
+    color: black;
+}
+
+.container-fluid {
+    padding-bottom: 20px;
+}

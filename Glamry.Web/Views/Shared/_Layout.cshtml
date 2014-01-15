@@ -1,0 +1,143 @@
+﻿@using System.Web.Optimization
+@using Glamry.Web.Helpers
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=10">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShemiLoge &bull; @ViewBag.Title</title>
+    @*<script src="~/Scripts/pick-a-color.js"></script>*@
+    @Styles.Render("~/css")
+</head>
+<body>
+    <!-- Fixed navbar -->
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="glyphicon glyphicon-arrow-down "></span>
+                    @*<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>*@
+                    MENU
+                </button>
+                <a class="navbar-brand" href="/">Shemi Loge</a>
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">@Html.MenuLink("Home", "Index", "Home")</li>
+                    <li>@Html.MenuLink("About", "About", "Home")</li>
+                    <li>@Html.MenuLink("Contact", "Contact", "Home")</li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setting <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Edit Profile</a></li>
+                            <li>@Html.ActionLink("Color Recommendation", "ColorMixing", "Sytler")</li>
+                            <li><a href="#">Change Profile Picture</a></li>
+                            <li><a href="#">Another Menu</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Avatar</li>
+                            <li><a href="#">Change Avatar</a></li>
+                            <li><a href="#">Customize Avatar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="navbar-form navbar-right">
+
+                    @* <div class="form-group">
+                        <input type="text" placeholder="Email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" class="form-control">
+                    </div>*@
+
+                    <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#registerModal">Get Started</button>
+                    <button type="submit" class="btn btn-success col-lg-pull-10" data-toggle="modal" data-target="#myModal">Sign in</button>
+
+                    <!-- /.modal -->
+                </div>
+
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+
+
+    </nav>
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" id="register">
+            <div class="modal-content" id="reg">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+                </div>
+                @Html.Partial("_Register")
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Sign in with your Glamry ID</h4>
+                </div>
+                @Html.Partial("_LogIn")
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    @RenderSection("Carousel", false)
+    <div class="container">
+        <noscript>
+            <div class="alert">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Warning!</strong> Please enable JavaScript in your browser!
+            </div>
+        </noscript>
+
+        <div class="row">
+            @if (IsSectionDefined("sidebar"))
+            {
+                <div class="col-lg-2">
+                    @RenderSection("sidebar", required: false)
+                </div>
+            }
+
+            <div id="content" @(IsSectionDefined("sidebar") ? Html.Raw("class=col-lg-10") : Html.Raw("class=col-lg-12"))>
+                @if (IsSectionDefined("featured"))
+                {
+                    <div>
+                        <div class="jumbotron">
+                            @RenderSection("featured", required: false)
+                        </div>
+                    </div>
+                }
+                <div class="popover-content">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <footer id="footer">
+                    &copy; 2013 NIsun.
+                </footer>
+            </div>
+        </div>
+    </div>
+    @Scripts.Render("~/js")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

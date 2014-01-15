@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glamry.Web", "Glamry.Web\Glamry.Web.csproj", "{35A78A60-8C9D-40E2-82EE-704C6D3E917F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glamry.Test", "Glamry.Test\Glamry.Test.csproj", "{CF14A97A-8CD6-40D1-9138-E219159E585E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glamry.BusinessLogic", "Glamry.BusinessLogic\Glamry.BusinessLogic.csproj", "{683870C3-4CBD-4A4D-A09B-9FEE8D19604B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35A78A60-8C9D-40E2-82EE-704C6D3E917F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35A78A60-8C9D-40E2-82EE-704C6D3E917F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35A78A60-8C9D-40E2-82EE-704C6D3E917F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35A78A60-8C9D-40E2-82EE-704C6D3E917F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF14A97A-8CD6-40D1-9138-E219159E585E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF14A97A-8CD6-40D1-9138-E219159E585E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF14A97A-8CD6-40D1-9138-E219159E585E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF14A97A-8CD6-40D1-9138-E219159E585E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{683870C3-4CBD-4A4D-A09B-9FEE8D19604B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{683870C3-4CBD-4A4D-A09B-9FEE8D19604B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{683870C3-4CBD-4A4D-A09B-9FEE8D19604B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{683870C3-4CBD-4A4D-A09B-9FEE8D19604B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

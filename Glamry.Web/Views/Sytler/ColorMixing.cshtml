@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "ColorMixing";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="clearfix"></div>
+<h2>ColorMixing</h2>
+<div class="control-group">
+    <label for="init" class="control-label">Switch</label>
+    <div class="form-control">
+        <button type="button" id="showPicker" class="btn">show picker</button>
+        <button type="button" id="hidePicker" class="btn">hide picker</button>
+        <button type="button" id="setColor" class="btn">set color #DB7093 (palevioletred)</button>
+        <button type="button" id="setId" class="btn">set id 4 (dodgerblue)</button>
+    </div>
+</div>
+
+<div class="control-group">
+    <label for="colorselector" class="control-label">ColorSelector</label>
+    <div class="form-control">
+        <select id="colorselector">
+            <option value="8" data-color="#DEB887">burlywood</option>
+            <option value="9" data-color="#5F9EA0">cadetblue</option>
+            <option value="10" data-color="#7FFF00">chartreuse</option>
+            <option value="117" data-color="#EE82EE">violet</option>
+            <option value="118" data-color="#F5DEB3">wheat</option>
+            <option value="120" data-color="#9ACD32">yellowgreen</option>
+        </select>
+    </div>
+</div>
+<div>
+    <input type="text" value="000" name="border-color" class="pick-a-color">
+</div>

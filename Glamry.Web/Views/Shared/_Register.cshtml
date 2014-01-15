@@ -1,0 +1,34 @@
+﻿<div id="regCarousel" class="carousel" style="margin-top: 0px">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" id="registerCarousel">
+        <div class="item ">
+            @* <img src="~/Content/images/carousel4.jpg" class="img-responsive" data-src="holder.js/100%x500/auto/#777:#a7a7a/text:First slide" alt="First slide">*@
+
+            <div >
+                @Html.Partial("_SignUp")
+            </div>
+
+        </div>
+    <div class="item active">
+        @*<img src="~/Content/images/" class="img-responsive" data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Second slide" alt="Second slide">*@
+      
+            <div>
+                @Html.Partial("_ImageUpload")
+            </div>
+       </div>
+    <div class="item">
+        @*<img src="~/Content/images/" class="img-responsive" data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Third slide" alt="Third slide">*@
+        <div>
+            
+              <p><a class="btn btn-lg btn-success" href="#" target="_blank">Sign In</a></p>
+        </div>
+    </div>
+</div>
+@*<a class="left carousel-control" href="#regCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+<a class="right carousel-control" href="#regCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>*@
+</div><!-- /.carousel -->

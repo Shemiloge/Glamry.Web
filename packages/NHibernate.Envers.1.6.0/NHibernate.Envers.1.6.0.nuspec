@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>NHibernate.Envers</id>
+    <version>1.6.0</version>
+    <title>NHibernate.Envers</title>
+    <authors>NHibernate community,  Hibernate community</authors>
+    <owners>NHibernate community,  Hibernate community</owners>
+    <projectUrl>https://bitbucket.org/RogerKratz/nhibernate.envers</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Powerful audit trail integrated with NHibernate.</description>
+    <summary>Audit trail integrated with NHibernate.</summary>
+    <releaseNotes />
+    <copyright />
+    <language>en-US</language>
+    <tags>Audit NHibernate Envers History Auditing</tags>
+    <dependencies>
+      <dependency id="NHibernate" version="[3.3.1, 4.0)" />
+      <dependency id="Iesi.Collections" version="[3.2, 4.0)" />
+    </dependencies>
+  </metadata>
+</package>

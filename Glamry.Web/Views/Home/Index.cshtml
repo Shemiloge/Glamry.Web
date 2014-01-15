@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+@*<div class="container marketing" id="banner">
+    <div class="row jumbotron">
+        <div class="thumbnail col-sm-4 img-responsive">
+            <img class="img-rounded img-responsive" src="/Content/images/AsoEbi.jpg" data-src="holder.js/240x140" alt="140x140" style="width: auto; height: auto;">
+        </div>
+        <div class="thumbnail col-sm-4 img-responsive">
+            <img class="img-rounded img-responsive" src="/Content/images/AsoEbi1.jpg" data-src="holder.js/140x140" alt="140x140" style="width: auto; height: auto;">
+        </div>
+        <div class="thumbnail col-sm-4 img-responsive">
+            <img class="img-rounded img-responsive" src="/Content/images/AsoEbi2.jpg" data-src="holder.js/140x140" alt="140x140" style="width: auto; height: auto;">
+        </div>
+    </div>
+</div>*@
+
+
+<div class="container marketing">
+    <div class="row">
+        <div class=" col-lg-4 col-sm-4">
+            <img class="img-rounded bs-docs-example-images" src="/Content/images/" data-src="holder.js/140x140" alt="140x140" style="width: 100px; height: 100px;">
+            <h2 class="bolder">Color Styler</h2>
+            <blockquote class="caption">
+                Users can create a match up using our colour styler. They pick the type of colour 
+they have in mind and the system provides recommendations of colours that 
+match the primary colour they have selected.
+            </blockquote>
+            @*<p><a class="btn btn-default" href="~/Sytler/ColorMixing">Try Color Styler »</a></p>*@
+            <p>@Html.ActionLink("Try Color Styler", "ColorMixing", "Sytler", "", new { @class = "btn btn-default" })</p>
+        </div>
+
+        <div class="col-lg-4 col-sm-4">
+            <img class="img-rounded" src="/Content/images/" data-src="holder.js/140x140" alt="140x140" style="width: 100px; height: 100px;">
+            <h2 class="bolder">Heading</h2>
+            <blockquote class="caption">
+                User clicks "View combination" to see the avatar clothed in the colour 
+combination selected. User can simply scroll to the right to see the rest 
+combinations on the avatar (just like viewing a picture in Picasa)
+            </blockquote>
+            <p><a class="btn btn-default" href="#">View details »</a></p>
+        </div>
+
+        <div class=" col-lg-4 col-sm-4">
+            <img class="img-rounded" src="/Content/images/" data-src="holder.js/140x140" alt="140x140" style="width: 100px; height: 100px;">
+            <h2 class="bolder">Heading</h2>
+            <blockquote class="caption">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</blockquote>
+            <p><a class="btn btn-default" href="#">View details »</a></p>
+        </div>
+    </div>
+</div>
+
+
+@section Carousel
+{
+    @Html.Partial("_Carousel")
+}
+@*@section sidebar
+{
+    @Html.Partial("_Carousel")
+}*@
+
+
